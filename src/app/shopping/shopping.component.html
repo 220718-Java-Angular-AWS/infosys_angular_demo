@@ -1,0 +1,19 @@
+<!-- Interpolation -->
+<h1>{{ message | uppercase | lowercase}}</h1>
+
+<!-- Property Binding -->
+<input [placeholder]="place">
+
+<!-- Event Binding -->
+<input type="button" (click)="printName()">
+<button (click)="toggleDisplayText()">Toggle Display Text</button>
+
+<!-- Structural Directives -->
+<p *ngIf="check">Lorem ipsum dolor.</p>
+
+<ul>
+    <li *ngFor="let item of shoppingList">
+        Item Name : {{item.itemName}}
+        Cost : {{item.cost | currency}}
+    </li>
+</ul>
